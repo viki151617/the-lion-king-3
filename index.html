@@ -4,15 +4,74 @@
 
  <head>
    <title> the lion king 2019 </title>
-     <style>
-	     
-       footer 
-        {
-          background: #ccc;
-          padding: 20px;
-       
-     </style>
+   
+ <style>
+   
+   .top-menu 
+   {
+  position: relative; 
+  background: #fff;
+   }
+  .top-menu:before,
+  .top-menu:after 
+   {
+  content: "";
+  display: block;
+   }
 
+  .menu-main
+   {
+      list-style: none;
+      padding: 0 30px;
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+   }
+   
+  .menu-main:before,
+  .menu-main:after
+   {
+     line-height: 1;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+   }
+  .menu-main:before {left: 15px;}
+  .menu-main:after {right: 15px;}
+  .menu-main li  
+   {
+     display: inline-block;
+     padding: 5px 0;
+   }
+  .menu-main a
+        {
+     text-decoration: none;
+     display: inline-block;
+     margin: 5px 10px;
+     padding: 10px 20px;
+     font-size: 16px;
+     color: #000000;
+     transition: .1s linear;
+        }
+  .menu-main .current, .menu-main a:hover {
+     border-radius: 3px;
+     background: #996699;
+     color: #000000;
+     border-color: #000000;
+  }
+  .text
+      {
+     padding: 10px 10px;
+     font-size: 20px;
+     color: #4d004d;
+       }
+      
+   .footer
+      {
+      background: #ccc; 
+      padding: 20px;
+      }
+      </style>
  </head>
  
  <body>
@@ -20,19 +79,19 @@
   <header style="color:#800080; font-size: 50px;"> Film the lion king 2019 </header>
   
   <section>
-    <nav style=float: left; width: 30%; height: 150px; background: #ccc; padding: 20px;>
-      <ul>
-        <li><a href="https://viki151617.github.io/the-lion-king-2/1994.html">The Lion King 1994</a></li>
-        <li><a href="https://viki151617.github.io/the-lion-king-2/1998.html">The Lion King II: Simba's Pride 1998</a></li>
-        <li><a href="https://viki151617.github.io/the-lion-king-2/2004.html">The Lion King 3: Hakuna Matata 2004</a></li>
+<nav class="top-menu">
+      <ul class="menu-main">
+        <li><a href="https://viki151617.github.io/the-lion-king-2/1994.html">The Lion King I</a></li>
+        <li><a href="https://viki151617.github.io/the-lion-king-2/1998.html">The Lion King II</a></li>
+        <li><a href="https://viki151617.github.io/the-lion-king-2/2004.html">The Lion King III</a></li>
       </ul>
     </nav>
   
   <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Disney_The_Lion_King_2019.jpg" alt="Theatrical release poster" style="width:250px;height:350px;">
 
    <article>
-      <p>The Lion King is a 2019 American musical drama film directed and produced by Jon Favreau, written by Jeff Nathanson, and produced by Walt Disney Pictures and Fairview Entertainment. It is a photorealistic computer-animated remake of Disney's traditionally animated 1994 film of the same name. </p>
-      <p>Plans for a remake of 1994's The Lion King were confirmed in September 2016 following box office successes for Disney remakes such as The Jungle Book (2016). Much of the main cast signed in early 2017, and principal photography began in mid-2017 on a blue screen stage in Los Angeles.</p>
+      <p class=text>The Lion King is a 2019 American musical drama film directed and produced by Jon Favreau, written by Jeff Nathanson, and produced by Walt Disney Pictures and Fairview Entertainment. It is a photorealistic computer-animated remake of Disney's traditionally animated 1994 film of the same name. </p>
+      <p class=text>Plans for a remake of 1994's The Lion King were confirmed in September 2016 following box office successes for Disney remakes such as The Jungle Book (2016). Much of the main cast signed in early 2017, and principal photography began in mid-2017 on a blue screen stage in Los Angeles.</p>
 
 		  <p> Voice cast: </p>
 		     <ul>
@@ -67,9 +126,11 @@
 
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/7TavVZMewpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <footer>
+    <footer class="footer">
       <p>All information on this site is taken from wikipedia.org</p>
     </footer>
     
   </body>
  </html>
+
+
