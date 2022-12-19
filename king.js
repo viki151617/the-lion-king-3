@@ -4,8 +4,8 @@ function myFunction() {
   
   var c = document.getElementById("myframe1")
   var v = document.getElementById("myframe1")
-  c.style.scrwidth = '250px'; 
-  v.style.scrheight = '350px';
+  c.style.scrwidth = '450px'; 
+  v.style.scrheight = '550px';
 }
 
 
