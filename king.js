@@ -5,7 +5,6 @@ button.addEventListener("click", readMore);
 
 function readMore() {
      if (article.className == "open") {
-       // Read less
      article.className = "";
      button.innerHTML = "Show more";
    } else {
